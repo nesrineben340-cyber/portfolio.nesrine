@@ -1,0 +1,132 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Portfolio — Nesrine Benallal</title>
+  <style>
+    /* Minimal CSS adapted from your React styles (tailwind-like look) */
+    :root{--purple-600:#7c3aed;--purple-200:#e9d5ff;--bg1:linear-gradient(135deg,#ede9fe,#f8fafc);}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(135deg,#f5f3ff 0%, #fff 50%, #f3e8ff 100%); color:#111;}
+    .container{max-width:980px;margin:28px auto;padding:20px;}
+    header h1{color:var(--purple-600);font-size:28px;margin:0 0 12px;}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    .card{background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(80,60,120,0.08);}
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
+    nav .tabs{display:flex;gap:14px;}
+    nav .tab{cursor:pointer;color:#6b2a9f;font-weight:600;}
+    .muted{color:#5b5b6b;}
+    footer{margin-top:28px;color:#666;text-align:center;}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}}
+    a{color:var(--purple-600)}
+  </style>
+</head>
+<body>
+  <div class="container" id="site">
+    <nav>
+      <h1>Nesrine B.</h1>
+      <div class="tabs" id="tabs">
+        <div class="tab" data-tab="accueil">Accueil</div>
+        <div class="tab" data-tab="competences">Compétences</div>
+        <div class="tab" data-tab="projets">Projets</div>
+        <div class="tab" data-tab="veille">Veille</div>
+        <div class="tab" data-tab="contact">Contact</div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!-- Accueil -->
+      <section id="accueil" class="view">
+        <header style="text-align:center;margin-bottom:18px">
+          <h2 style="color:var(--purple-600);font-size:24px;margin:0">Portfolio — Nesrine Benallal</h2>
+          <p class="muted">Étudiante en BTS SIO — Spécialité SISR</p>
+        </header>
+        <div class="grid">
+          <div class="card">
+            <h3 style="color:var(--purple-600);margin-top:0">À propos</h3>
+            <p class="muted">Je suis une étudiante motivée en BTS SIO, passionnée par les systèmes et réseaux, la cybersécurité et l'administration des systèmes. Mon objectif est d'intégrer une alternance pour approfondir mes compétences techniques et professionnelles.</p>
+          </div>
+          <div class="card">
+            <h3 style="color:var(--purple-600);margin-top:0">Contact</h3>
+            <p>✉️ <a href="mailto:nesrineben340@gmail.com">nesrineben340@gmail.com</a></p>
+            <p>✉️ <a href="mailto:nesrine.benallal@ecoles-epsi.net">nesrine.benallal@ecoles-epsi.net</a></p>
+            <p>☎️ <a href="tel:+33787803166">07 87 80 31 66</a></p>
+            <p>📍 Montpellier, 34000</p>
+            <p style="margin-top:8px"><a href="https://www.linkedin.com/in/nesrine-benallal-472a7b250" target="_blank">LinkedIn</a></p>
+            <p><a href="Cv benallal Nesrine .pdf" target="_blank">Télécharger le CV</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Competences -->
+      <section id="competences" class="view" style="display:none">
+        <div class="card">
+          <h3 style="color:var(--purple-600);margin-top:0">Compétences Techniques</h3>
+          <ul class="muted">
+            <li>Administration Windows & Linux</li>
+            <li>Virtualisation (VirtualBox, VMware)</li>
+            <li>Réseaux : TCP/IP, DNS, DHCP, VLAN</li>
+            <li>Programmation : Java, Python</li>
+            <li>Bases de données : SQL</li>
+          </ul>
+          <h3 style="color:var(--purple-600);margin-top:12px">Soft Skills</h3>
+          <ul class="muted">
+            <li>Travail en équipe</li>
+            <li>Organisation</li>
+            <li>Autonomie</li>
+            <li>Écoute active</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projets -->
+      <section id="projets" class="view" style="display:none">
+        <div class="card">
+          <h3 style="color:var(--purple-600);margin-top:0">Mes Projets BTS SIO (PPE)</h3>
+          <p class="muted">Ici vous pourrez présenter les projets encadrés, détailler les technologies utilisées (GLPI, Active Directory, VirtualBox, scripts, SQL...) et ajouter des captures d'écran ou liens vers vos dépôts GitHub.</p>
+          <ul class="muted">
+            <li><strong>Support XEFI Montpellier Ouest</strong> — administration réseau, tickets GLPI, assistance.</li>
+            <li><strong>Mairie de Tlemcen</strong> — maintenance, déploiement, assistance utilisateurs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Veille -->
+      <section id="veille" class="view" style="display:none">
+        <div class="card">
+          <h3 style="color:var(--purple-600);margin-top:0">Veille Technologique</h3>
+          <p class="muted">Présentez ici votre sujet de veille, les outils utilisés (Google Alerts, Feedly...) et l'impact des récentes évolutions technologiques sur votre domaine.</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="view" style="display:none">
+        <div class="card">
+          <h3 style="color:var(--purple-600);margin-top:0">Contact</h3>
+          <p class="muted">Vous pouvez ajouter ici un formulaire de contact (ex: nom, email, message) ou laisser vos informations professionnelles.</p>
+          <p><strong>Email pro:</strong> <a href="mailto:nesrine.benallal@ecoles-epsi.net">nesrine.benallal@ecoles-epsi.net</a></p>
+          <p><strong>Téléphone:</strong> <a href="tel:+33787803166">07 87 80 31 66</a></p>
+        </div>
+      </section>
+
+      <footer>© 2025 — Portfolio de Nesrine Benallal</footer>
+    </main>
+  </div>
+
+  <script>
+    // Simple tab handling to mimic the React tabs
+    const tabs = document.querySelectorAll('.tab');
+    const views = document.querySelectorAll('.view');
+    tabs.forEach(t => {
+      t.addEventListener('click', () => {
+        const key = t.dataset.tab;
+        views.forEach(v => v.style.display = (v.id === key ? '' : 'none'));
+        // set active styling
+        tabs.forEach(x => x.style.opacity = '0.7');
+        t.style.opacity = '1';
+      });
+    });
+  </script>
+</body>
+</html>
